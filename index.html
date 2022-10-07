@@ -4,68 +4,112 @@
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=1920px">
    <link type="image/x-icon" href="./img/favicon.ico" rel="shortcut icon" />
    <link type="Image/x-icon" href="./img/favicon.ico" rel="icon" />
    <title>DocumentContact centr solution</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800;900&family=Nixie+One&display=swap"
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800;900&family=Nixie+One&display=swap"
       rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
 
    <link rel="stylesheet" href="./style.css" />
+</head>
 
 <body>
-   <header>
+   <header class="header">
       <div class="container">
          <div class="header-flex">
-            <a href="" class="header-logo link"></a>
+            <a href="" class="header-logo link"><svg width="236" height="64" class="header-icon">
+                  <use href="./images/svg/icons.svg#icon-logo-header"></use>
+               </svg></a>
             <ul class="header-list list">
-               <li class="header-item"><a href="" class="header-link link"></a></li>
-               <li class="header-item"><a href="" class="header-link link"></a></li>
-               <li class="header-item"><a href="" class="header-link link"></a></li>
-               <li class="header-item"><a href="" class="header-link link"></a></li>
-               <li class="header-item"><a href="" class="header-link link"></a></li>
-               <li class="header-item"><a href="" class="header-link link"></a></li>
-               <li class="header-item"><a href="" class="header-link link"></a></li>
-               <li class="header-item"><a href="" class="header-link link"></a></li>
-               <li class="header-item"><a href="" class="header-link link"></a></li>
-               <li class="header-item"><a href="" class="header-link link"></a></li>
+               <li class="header-item"><a href="" class="header-link link curent">HOME</a></li>
+               <li class="header-item"><a href="#whoweare" class="header-link link">Who We Are</a></li>
+               <li class="header-item"><a href="#whyus" class="header-link link">Why Us</a></li>
+               <li class="header-item"><a href="#solution" class="header-link link">Solutions</a></li>
+               <li class="header-item"><a href="#benefits" class="header-link link">Benefits</a></li>
+               <li class="header-item"><a href="#ourteam" class="header-link link">Our Team</a></li>
+               <li class="header-item"><a href="#casestudies" class="header-link link">Case Study</a></li>
+               <li class="header-item"><a href="#certifications" class="header-link link">Certifications</a></li>
+               <li class="header-item"><a href="#insights" class="header-link link">Insights</a></li>
+               <li class="header-item"><a href="#footer" class="header-link link">Contact Us</a></li>
             </ul>
          </div>
       </div>
    </header>
-   <section>
+   <section class="hero">
       <div class="container">
-         <h1 class="hero-title"></h1>
-         <button class="hero-btn"></button>
+         <h1 class="hero-title title">Lorem Ipsum is simply<br>
+            dummy text of the printing<br>
+            and typesetting industry.</h1>
+         <button class="hero-btn">REQUEST FOR MORE INFORMATION</button>
          <span class="liner"></span>
       </div>
    </section>
-   <section>
+   <section class="whoweare">
       <div class="container">
          <div class="whoweare-flex">
             <div class="whoweare-circle">
-               <q class="whoweare-quote"></q>
+               <p class="whoweare-quote">“Lorem ipsum dolor sit
+                  amet, consectetur
+                  adipiscing elit, sed do
+                  eiusmod tempor
+                  incididunt ut labore
+                  et dolore magna aliqua.”</p>
             </div>
             <div class="whoweare-content">
-               <h2 class="whoweare-title"></h2>
-               <span class="simvol"></span>
-               <pre class="whoweare-text"></pre>
+               <div class="parent">
+                  <h2 id="whoweare" class="title whoweare-title">Who We Are</h2>
+                  <span class="simvol"></span>
+               </div>
+               <p class="whoweare-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.</p>
+
+               <p class="whoweare-text">Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+               <p class="whoweare-text">Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.</p>
+
+               <p class="whoweare-text">Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.</p>
+
+               <p class="whoweare-text">Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
          </div>
       </div>
    </section>
-   <section>
+   <section class="whyus">
       <div class="container">
          <div class="whyus-flex">
             <div class="whyus-content">
-               <h2 class="whyus-title"></h2>
-               <span class="simvol"></span>
-               <pre class="whyus-text"></pre>
+               <div class="parent">
+                  <h2 id="whyus" class="title title-whyus">WHY US</h2>
+                  <span class="simvol"></span>
+               </div>
+               <p class="whyus-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.</p>
+
+               <p class="whyus-text">Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an
+                  unknown printer took a galley of type and scrambled
+                  it to make a type specimen book.</p>
             </div>
             <div class="whyus-img">
             </div>
@@ -73,213 +117,315 @@
       </div>
    </section>
    <div class="backgraund">
-      <section>
+      <section class="solution">
          <div class="container">
-            <h2 class="solution-title"></h2>
-            <span class="simvol"></span>
-            <ul class="solutio-lidt list">
+            <div class="parent">
+               <h2 id="solution" class="title solution-title">SOLUTIONS</h2>
+               <span class="simvol simvol-center"></span>
+            </div>
+            <ul class="solutio-list list">
                <li class="solution-item">
-                  <p class="solution-pre-title"></p>
-                  <p class="solution-text"></p>
+                  <svg class="solution-icon" width="110" height="110">
+                     <use href="./images/svg/icons.svg#icon-solutions-men"></use>
+                  </svg>
+                  <p class="solution-pre-title">Contact Center</p>
+                  <p class="solution-text">Lorem Ipsum is simply dummy
+                     text of the printing and
+                     typesetting industry.</p>
+                  <a href="" class="solution-link link">Learn More</a>
                </li>
                <li class="solution-item">
-                  <p class="solution-pre-title"></p>
-                  <p class="solution-text"></p>
+                  <svg class="solution-icon" width="110" height="110">
+                     <use href="./images/svg/icons.svg#icon-solutions-cub"></use>
+                  </svg>
+                  <p class="solution-pre-title">OMNI CHANNEL</p>
+                  <p class="solution-text">Lorem Ipsum is simply dummy
+                     text of the printing and
+                     typesetting industry.</p>
+                  <a href="" class="solution-link link">Learn More</a>
                </li>
                <li class="solution-item">
-                  <p class="solution-pre-title"></p>
-                  <p class="solution-text"></p>
+                  <svg class="solution-icon" width="113" height="110">
+                     <use href="./images/svg/icons.svg#icon-solutions-cub-arrows"></use>
+                  </svg>
+                  <p class="solution-pre-title">ANALYTICS</p>
+                  <p class="solution-text">Lorem Ipsum is simply dummy
+                     text of the printing and
+                     typesetting industry.</p>
+                  <a href="" class="solution-link link">Learn More</a>
                </li>
             </ul>
          </div>
       </section>
-      <section>
-         <div class="contaner">
-            <h2 class="benefits-title"></h2>
-            <span class="simvol"></span>
+      <section class="benefits">
+         <div class="container">
+            <div class="parent">
+               <h2 id="benefits" class="title benefits-title">BENEFITS</h2>
+               <span class="simvol"></span>
+            </div>
          </div>
          <ul class="benefits-list list">
             <li class="benefits-item">
-               <svg class="benefits-icon">
-                  <use></use>
+               <svg class="benefits-icon" width="94.94" height="94.94">
+                  <use href="./images/svg/icons.svg#icon-benefits-1"></use>
                </svg>
-               <h3 class="benefits-pre-title"></h3>
-               <p class="benefits-text"></p>
+               <h3 class="benefits-pre-title">HEADING</h3>
+               <p class="benefits-text">Lorem Ipsum is
+                  simply dummy
+                  text of the</p>
             </li>
             <li class="benefits-item">
-               <svg class="benefits-icon">
-                  <use></use>
+               <svg class="benefits-icon" width="104.37" height="94.94">
+                  <use href="./images/svg/icons.svg#icon-benefits-2"></use>
                </svg>
-               <h3 class="benefits-pre-title"></h3>
-               <p class="benefits-text"></p>
+               <h3 class="benefits-pre-title">HEADING</h3>
+               <p class="benefits-text">Lorem Ipsum is
+                  simply dummy
+                  text of the</p>
             </li>
             <li class="benefits-item">
-               <svg class="benefits-icon">
-                  <use></use>
+               <svg class="benefits-icon" width="96.47" height="97.61">
+                  <use href="./images/svg/icons.svg#icon-benefits-3"></use>
                </svg>
-               <h3 class="benefits-pre-title"></h3>
-               <p class="benefits-text"></p>
+               <h3 class="benefits-pre-title">HEADING</h3>
+               <p class="benefits-text">Lorem Ipsum is
+                  simply dummy
+                  text of the</p>
             </li>
             <li class="benefits-item">
-               <svg class="benefits-icon">
-                  <use></use>
+               <svg class="benefits-icon" width="126.56" height="97.61">
+                  <use href="./images/svg/icons.svg#icon-benefits-4"></use>
                </svg>
-               <h3 class="benefits-pre-title"></h3>
-               <p class="benefits-text"></p>
+               <h3 class="benefits-pre-title">HEADING</h3>
+               <p class="benefits-text">Lorem Ipsum is
+                  simply dummy
+                  text of the</p>
             </li>
             <li class="benefits-item">
-               <svg class="benefits-icon">
-                  <use></use>
+               <svg class="benefits-icon" width="105.66" height="97.61">
+                  <use href="./images/svg/icons.svg#icon-benefits-5"></use>
                </svg>
-               <h3 class="benefits-pre-title"></h3>
-               <p class="benefits-text"></p>
+               <h3 class="benefits-pre-title">HEADING</h3>
+               <p class="benefits-text">Lorem Ipsum is
+                  simply dummy
+                  text of the</p>
             </li>
             <li class="benefits-item">
-               <svg class="benefits-icon">
-                  <use></use>
+               <svg class="benefits-icon" width="103.3" height="97.61">
+                  <use href="./images/svg/icons.svg#icon-benefits-6"></use>
                </svg>
-               <h3 class="benefits-pre-title"></h3>
-               <p class="benefits-text"></p>
+               <h3 class="benefits-pre-title">HEADING</h3>
+               <p class="benefits-text">Lorem Ipsum is
+                  simply dummy
+                  text of the</p>
             </li>
          </ul>
-         <p class="benefit-post-text"></p>
-         <a href="" class="benefits-link link"></a>
+         <p class="benefits-post-text">71% of online customers expect a response within of 5 minutes of reaching out to
+            a
+            company.
+            Companyname can make this happen for your business.</p>
+         <a href="" class="benefits-link link">Learn More</a>
       </section>
    </div>
-   <section>
+   <section class="ourteam">
       <div class="container">
          <div class="ourteam-flex">
-            <h2 class="ourteam-title"></h2>
-            <span class="simvol"></span>
-            <pre class="ourteam-text">
-               Lorem Ipsum is simply dummy text of the
-               printing and typesetting industry.
+            <div class="ourteam-content">
+               <div class="parent">
+                  <h2 id="ourteam" class="title ourteam-title">OUR TEAM</h2>
+                  <span class="simvol"></span>
+               </div>
+               <p class="ourteam-text">
+                  Lorem Ipsum is simply dummy text of the
+                  printing and typesetting industry.</p>
 
-               Lorem Ipsum has been the industry's
-               standard dummy text ever since the 1500s,
-               when an unknown printer took a galley
-               of type and scrambled it to make a type
-               specimen book.
+               <p class="ourteam-text">Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s,
+                  when an unknown printer took a galley
+                  of type and scrambled it to make a type
+                  specimen book.</p>
 
-               Lorem Ipsum is simply dummy text of the
-               printing and typesetting industry.
+               <p class="ourteam-text">Lorem Ipsum is simply dummy text of the
+                  printing and typesetting industry.</p>
 
-               Lorem Ipsum has been the industry's
-               standard dummy text ever since the 1500s,
-               when an unknown printer took a galley
-               of type and scrambled it to make a type
-               specimen book</pre>
+               <p class="ourteam-text">Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s,
+                  when an unknown printer took a galley
+                  of type and scrambled it to make a type
+                  specimen book</p>
+            </div>
+            <ul class="ourteam-list list">
+               <li class="ourteam-item">
+
+                  <div class="ourteam-container">
+                     <img src="./images/our-team-2.jpg" alt="guy" width="320" height="415">
+                     <div class="image-text">
+                        <p class="ourteam-name">Name</p>
+                        <p class="ourteam-designation">Designation</p>
+                     </div>
+                  </div>
+               </li>
+               <li class="ourteam-item">
+                  <ul class="ourteam-post-list list">
+                     <li class="ourtteam-post-item">
+                        <div class="ourteam-container">
+                           <img src="./images/our-team-1.jpg" alt="girl" width="320" height="415">
+                           <div class="image-text">
+                              <p class="ourteam-name">Name</p>
+                              <p class="ourteam-designation">Designation</p>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="ourtteam-post-item">
+                        <div class="ourteam-container">
+                           <img src="./images/our-team-1.jpg" alt="girl" width="320" height="415">
+                           <div class="image-text">
+                              <p class="ourteam-name">Name</p>
+                              <p class="ourteam-designation">Designation</p>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+
+
+               </li>
+               <li class="ourteam-item">
+                  <div class="ourteam-container">
+                     <img src="./images/our-team-2.jpg" alt="guy" width="320" height="415">
+                     <div class="image-text">
+                        <p class="ourteam-name">Name</p>
+                        <p class="ourteam-designation">Designation</p>
+                     </div>
+                  </div>
+               </li>
+            </ul>
          </div>
-         <ul class="ourteam-list list">
-            <li class="ourteam-item">
-               <div class="ourteam-container">
-                  <img src="" alt="">
-                  <p class="ourteam-name"></p>
-                  <p class="ourteam-designation"></p>
-               </div>
-            </li>
-            <li class="ourteam-item">
-               <div class="ourteam-container">
-                  <img src="" alt="">
-                  <p class="ourteam-name"></p>
-                  <p class="ourteam-designation"></p>
-               </div>
-               <div class="ourteam-container">
-                  <img src="" alt="">
-                  <p class="ourteam-name"></p>
-                  <p class="ourteam-designation"></p>
-               </div>
-            </li>
-            <li class="ourteam-item">
-               <div class="ourteam-container">
-                  <img src="" alt="">
-                  <p class="ourteam-name"></p>
-                  <p class="ourteam-designation"></p>
-               </div>
-            </li>
-         </ul>
-
       </div>
    </section>
-   <section>
-      <div class="continer">
-         <ul class="casestudies-list list">
-            <li class="casestudies-item">
-               <h2 class="casestudies-title"></h2>
+   <section class="casestudies">
+      <ul class="casestudies-list list">
+         <li class="casestudies-item">
+            <div class="parent">
+               <h2 id="casestudies" class="title">CASE STUDIES</h2>
                <span class="simvol"></span>
-            </li>
-            <li class="casestudies-item"><img></li>
-            <li class="casestudies-item"><img></li>
-         </ul>
-      </div>
+            </div>
+         </li>
+         <li class="casestudies-item"><img src="./images/case-1.jpg" alt="cofe and magazyne" width="627" height="540">
+         </li>
+         <li class="casestudies-item"><img src="./images/case-2.jpg" alt="hands and tablet" width="627" height="540">
+         </li>
+      </ul>
    </section>
-   <section>
+   <section class="certifications">
       <div class="container">
-         <h2 class="certifications-title"></h2>
-         <span class="simvol"></span>
+         <div class="parent">
+            <h2 id="certifications" class="title">CERTIFICATIONS</h2>
+            <span class="simvol simvol-center"></span>
+         </div>
          <ul class="certifications-list list">
-            <li class="certifications-item"></li>
-            <li class="certifications-item"></li>
-            <li class="certifications-item"></li>
-            <li class="certifications-item"></li>
-            <li class="certifications-item"></li>
-            <li class="certifications-item"></li>
+            <li class="certifications-item"><svg class="certifications-icon" width="122" height="122">
+                  <use href="./images/svg/icons.svg#icon-certifications"></use>
+               </svg></li>
+            <li class="certifications-item"><svg class="certifications-icon" width="122" height="122">
+                  <use href="./images/svg/icons.svg#icon-certifications"></use>
+               </svg></li>
+            <li class="certifications-item"><svg class="certifications-icon" width="122" height="122">
+                  <use href="./images/svg/icons.svg#icon-certifications"></use>
+               </svg></li>
+            <li class="certifications-item"><svg class="certifications-icon" width="122" height="122">
+                  <use href="./images/svg/icons.svg#icon-certifications"></use>
+               </svg></li>
+            <li class="certifications-item"><svg class="certifications-icon" width="122" height="122">
+                  <use href="./images/svg/icons.svg#icon-certifications"></use>
+               </svg></li>
+            <li class="certifications-item"><svg class="certifications-icon" width="122" height="122">
+                  <use href="./images/svg/icons.svg#icon-certifications"></use>
+               </svg></li>
          </ul>
       </div>
    </section>
-   <section>
+   <section class="insights">
       <div class="container">
-         <h2 class="insights-title"></h2>
-         <span class="simvol"></span>
+         <div class="parent">
+            <h2 id="insights" class="title insights-title">INSIGHTS</h2>
+            <span class="simvol"></span>
+         </div>
          <ul class="insights-list list">
-            <li class="insights-item"></li>
-            <li class="insights-item"></li>
-            <li class="insights-item"></li>
-            <li class="insights-item"></li>
-            <li class="insights-item"></li>
-            <li class="insights-item"></li>
+            <li class="insights-item">
+               <h3 class="insights-pre-title">Heading</h3>
+               <p class="insights-text">Lorem Ipsum is</br>
+                  simply dummy</br>
+                  text of the</p>
+               <a href="" class="insights-link link">Read Article</a>
+            </li>
+            <li class="insights-item"><img src="./images/insidhts-1.jpg" alt="schedule" class="insights-img" width="520"
+                  height="336"></li>
+            <li class="insights-item"><img src="./images/insidhts-2.jpg" alt="man working on a compute"
+                  class="insights-img" width="520" height="336"></li>
+            <li class="insights-item"><img src="./images/insidhts-3.jpg" alt="parachutist in the sky"
+                  class="insights-img" width="520" height="336"></li>
+            <li class="insights-item"><img src="./images/insidhts-4.jpg" alt="
+a large decoration in the form of an eye is held in hands" class="insights-img" width="520" height="336"></li>
+            <li class="insights-item"><img src="./images/insidhts-5.jpg" alt="machine code on the monitor"
+                  class="insights-img" width="520" height="336"></li>
          </ul>
       </div>
    </section>
-   <footer>
+   <footer class="footer">
       <div class="container">
          <div class="footer-flex">
             <div class="footer-content">
-               <a href="" class="footer-logo"></a>
-               <p class="footer-text"></p>
-               <b class="footer-pre-title"></b>
-               <p class="footer-text"></p>
+               <a href="" class="footer-logo link"><svg width="236" height="64" class="footer-icon">
+                     <use href="./images/svg/icons.svg#icon-logo-footer"></use>
+                  </svg></a>
+               <p class="footer-text">
+                  Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore
+                  magna aliqua.</p>
+
+               <p class="footer-text">Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod tempor incid
+                  idunt ut labore et dolore magna aliqua.</p>
+               <b class="footer-pre-title">GET SUPPORT</b>
+               <p class="footer-text-get">Mon-Fri: 9:00 AM – 6:00 PM</p>
                <ul class="footer-contact list">
-                  <li class="footer-item"><a href="" class="footer-item link"><span class="footer-icon"></span></a></li>
-                  <li class="footer-item"><a href="" class="footer-item link"><span class="footer-icon"></span></a></li>
+                  <li class="footer-item"><a href="tel:+1 234 5678 9101" class="footer-link upper link"><span
+                           class="footer-icon-tel"></span>+1 234 5678 9101</a></li>
+                  <li class="footer-item"><a href="mailto:info@companyname.com" class="footer-link lower link"><span
+                           class="footer-icon-email"></span>info@companyname.com</a></li>
                </ul>
             </div>
             <div class="footer-form">
-               <h2 class="form-title"></h2>
-               <span class="simvol"></span>
+               <div class="parent">
+                  <h2 id="footer" class="form-title title">Contact Us</h2>
+                  <span class="simvol"></span>
+               </div>
                <form action="" class="form">
-                  <input placeholder="" type="text" name="" id="" class="form-input">
-                  <input placeholder="" type="email" name="" id="" class="form-input">
-                  <input placeholder="" type="text" name="" id="" class="form-input">
-                  <textarea placeholder="" name="" id="" cols="30" rows="10" class="form-textarea"></textarea>
-                  <button type="submit"></button>
+                  <input placeholder="Name" type="text" name="" id="" class="form-input">
+                  <input placeholder="Email" type="email" name="" id="" class="form-input">
+                  <input placeholder="Company" type="text" name="" id="" class="form-input">
+                  <textarea placeholder="Your Message" name="" id="" cols="30" rows="10"
+                     class="form-textarea"></textarea>
+                  <button type="submit" class="form-btn">SUBMIT</button>
                </form>
             </div>
          </div>
          <div class="footer-post">
-            <p class="post-text"></p>
+            <p class="post-text">© Copyright 2022 | Theme by SYSTEM PVT LTD | All Rights Reserved | Powered by SYSTEM
+            </p>
             <ul class="social-list list">
-               <li class="socisl-item"><a href="" class="social-link link"><svg width="" height="">
-                        <use href=""></use>
+               <li class="social-item"><a href="" class="social-link link"><svg width="26.8" height="26.8">
+                        <use href="./images/svg/icons.svg#icon-social-facebook"></use>
                      </svg></a></li>
-               <li class="socisl-item"><a href="" class="social-link link"><svg width="" height="">
-                        <use href=""></use>
+               <li class="social-item"><a href="" class="social-link link"><svg width="26.8" height="26.8">
+                        <use href="./images/svg/icons.svg#icon-social-instagram"></use>
                      </svg></a></li>
-               <li class="socisl-item"><a href="" class="social-link link"><svg width="" height="">
-                        <use href=""></use>
+               <li class="social-item"><a href="" class="social-link link"><svg width="26.8" height="26.8">
+                        <use href="./images/svg/icons.svg#icon-social-linked"></use>
                      </svg></a></li>
-               <li class="socisl-item"><a href="" class="social-link link"><svg width="" height="">
-                        <use href=""></use>
+               <li class="social-item"><a href="" class="social-link link"><svg width="26.8" height="26.8">
+                        <use href="./images/svg/icons.svg#icon-social-twitter"></use>
                      </svg></a></li>
             </ul>
          </div>

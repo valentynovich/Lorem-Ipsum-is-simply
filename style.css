@@ -3,8 +3,40 @@ body {
   font-family: "Nixie One", cursive;
 }
 
-.container {
+img {
+  display: block;
+  height: auto;
   width: 100%;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+}
+
+.container {
+  width: 100vw;
   max-width: 1920px;
   padding: 0 160px 0;
   margin: 0 auto;
@@ -16,4 +48,702 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+.header-link,
+.benefits-text,
+.ourteam-text,
+.post-text,
+.insights-text,
+.insights-link {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.ourteam-text + .ourteam-text {
+  margin-top: 30px;
+}
+
+.insights-text {
+  margin: 20px 0;
+  color: #fff;
+}
+
+.insights-link {
+  color: #fff;
+}
+
+.header-link:focus,
+.header-link:hover {
+  text-shadow: 0.5px 0.5px 0 #fff, -0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff,
+    0.5px -0.5px 0 #fff, 0.5px 0.6px 0 #fff, -0.5px -0.6px 0 #fff,
+    -0.5px 0.6px 0 #fff, 0.5px -0.6px 0 #fff, 0.6px 0.5px 0 #fff,
+    -0.6px -0.5px 0 #fff, -0.6px 0.5px 0 #fff, 0.6px -0.5px 0 #fff;
+}
+
+.post-text {
+  color: #c4c4c4;
+}
+
+.header-link,
+.post-text {
+  color: #fff;
+}
+
+.hero-btn,
+.whoweare-text,
+.whyus-text,
+.solution-text,
+.solution-link,
+.benefits-pre-title,
+.benefits-post-text,
+.benefits-link,
+.ourteam-name,
+.insights-pre-title,
+.footer-text,
+.footer-text-get {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.benefits-pre-title {
+  margin: 41px 0;
+}
+
+.benefits-post-text {
+  margin: 64px 627px 64px 40px;
+}
+
+.benefits-link {
+  margin-left: 40px;
+}
+
+.whoweare-text + .whoweare-text {
+  margin-top: 40px;
+}
+
+.whyus-text + .whyus-text {
+  margin-top: 40px;
+}
+
+.solution-text {
+  margin-bottom: 43px;
+}
+
+.footer-text + .footer-text {
+  margin-top: 40px;
+}
+
+.hero-btn,
+.footer-text,
+.footer-text-get,
+.ourteam-name,
+.insights-pre-title {
+  color: #fff;
+}
+
+.hero-btn,
+.benefits-link,
+.benefits-pre-title {
+  font-weight: 800;
+}
+
+.whyus-text {
+  text-transform: none;
+}
+
+.solution-link {
+  color: #5ca7ff;
+}
+
+.solution-pre-title {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 39px;
+  line-height: 1.275;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.footer-pre-title {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.28;
+  text-transform: uppercase;
+  color: #b589e0;
+  margin: 98px 0 10px;
+}
+
+.ourteam-designation {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.whoweare-quote {
+  font-family: "Nixie One";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.146;
+  color: #000000;
+  margin: 385px 233px 365px 2px;
+}
+
+.title {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 1.28;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.form-title {
+  margin-bottom: 99px;
+}
+
+.simvol {
+  position: absolute;
+  width: 84px;
+  height: 5px;
+  bottom: -53px;
+  /* border: 2.5px solid #5ca7ff; */
+  border-radius: 2.5px;
+  background-color: #5ca7ff;
+}
+
+.simvol::after,
+.simvol::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-color: #b589e0;
+  border-radius: 2.5px;
+}
+
+.simvol::after {
+  top: 9px;
+  left: 4px;
+  width: 24px;
+  height: 5px;
+}
+
+.simvol::before {
+  bottom: 10.5px;
+  right: 10.5px;
+  width: 48px;
+  height: 5px;
+}
+
+.simvol-center {
+  transform: translateX(-50%);
+}
+
+.form-title {
+  color: #ffdd65;
+}
+
+.hero-title {
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.parent {
+  position: relative;
+}
+
+/* ----------------header----------------- */
+
+.header {
+  background-color: #000000;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-item + .header-item {
+  margin-left: 15px;
+}
+
+.curent {
+  text-shadow: 0.5px 0.5px 0 #fff, -0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff,
+    0.5px -0.5px 0 #fff, 0.5px 0.6px 0 #fff, -0.5px -0.6px 0 #fff,
+    -0.5px 0.6px 0 #fff, 0.5px -0.6px 0 #fff, 0.6px 0.5px 0 #fff,
+    -0.6px -0.5px 0 #fff, -0.6px 0.5px 0 #fff, 0.6px -0.5px 0 #fff;
+}
+
+/* -------------------hero----------------------- */
+
+.hero {
+  width: 1920px;
+  margin: 0 auto;
+  background-image: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(0, 0, 0, 0.18) 0%,
+      rgba(0, 0, 0, 0.78) 100%
+    ),
+    url(./images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 350px;
+  padding-bottom: 350px;
+  position: relative;
+}
+
+.hero-btn {
+  padding: 25px 60px;
+  background-color: #5ca7ff;
+  margin-top: 35px;
+  /* width: 575.84px;
+  height: 80.95px; */
+}
+
+.hero-btn:focus,
+.hero-btn:hover {
+  background-color: #2881e6;
+}
+
+.liner {
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  border-radius: 2.5px;
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  display: inline-flex;
+}
+
+.liner::after,
+.liner::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 25px;
+  border-radius: 2.5px;
+  background-color: #c4c4c4;
+}
+
+.liner::after {
+  top: 0;
+  right: -35px;
+}
+
+.liner::before {
+  top: 0;
+  left: -35px;
+}
+
+.liner:hover::before,
+.liner:hover::after {
+  background-color: #fff;
+}
+.liner:hover {
+  background-color: #c4c4c4;
+}
+
+/* ---------------------whoweare--------------------------- */
+
+.whoweare {
+  width: 1920px;
+  margin: 0 auto;
+  background-image: url(./images/Blob-Shape.png),
+    linear-gradient(
+      to right,
+      rgb(231, 231, 231, 1) 50.5%,
+      rgb(255, 255, 255, 1) 50.5%
+    );
+  background-repeat: no-repeat;
+  background-position: 5% 35%;
+}
+
+.whoweare-flex {
+  display: flex;
+  flex: 1 0 50%;
+}
+
+.whoweare-content {
+  background-color: #fff;
+  padding: 109px 0 149px 9px;
+}
+
+.whoweare-title {
+  margin-bottom: 152px;
+}
+
+/* ----------------------------whyus------------------------------------ */
+
+.whyus {
+  background-image: url(./images/why-us.jpg);
+  background-repeat: no-repeat;
+  background-size: 49.5% 100%;
+  background-position: right;
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.whyus-content {
+  padding: 109px 61px 354px 5px;
+}
+
+.title-whyus {
+  margin-bottom: 194px;
+}
+
+.whyus-flex {
+  display: flex;
+  flex: 0 0 50%;
+}
+
+.whyus-img {
+  padding: 395px;
+  /* background-color: #e7e7e7;
+  background-image: url(./images/why-us.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+/* -------------------------double backgraund-------------------------------- */
+
+.backgraund {
+  background-image: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(255, 255, 255, 0.67) 0%,
+      #ffffff 100%
+    ),
+    url(./images/white-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1920px;
+  margin: 0 auto;
+}
+
+/* --------------------solution------------------------- */
+
+.solution {
+  text-align: center;
+  padding: 109px 2px 213px 2px;
+}
+
+.solution-title {
+  margin-bottom: 181px;
+}
+
+.solutio-list {
+  display: flex;
+}
+
+.solution-item {
+  padding: 61px 41px 45px;
+  background-color: #fff;
+}
+
+.solution-item + .solution-item {
+  margin-left: 100px;
+}
+
+.solution-icon,
+.solution-pre-title {
+  margin-bottom: 84px;
+}
+
+.solution-item:hover {
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ------------------------------benefits---------------------------------- */
+.benefits {
+  padding-bottom: 129px;
+}
+
+.benefits-title {
+  margin-bottom: 124px;
+}
+
+.benefits-list {
+  display: flex;
+}
+
+.benefits-item {
+  padding: 64px 120px 65px 40px;
+}
+
+.benefits-item:not(:last-child) {
+  border-right: 1px solid #000000;
+}
+
+.benefits-item {
+  border-top: 1px solid #000000;
+}
+
+/* ------------------------ourteam------------------------------ */
+
+.ourteam-flex {
+  display: flex;
+  flex: 0 0 50%;
+  padding: 109px 0;
+}
+
+.ourteam-title {
+  margin-bottom: 100px;
+}
+
+.ourteam-content {
+  padding-right: 60px;
+  flex-basis: 487px;
+  flex-grow: 1;
+}
+
+.ourteam-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.ourteam-item:not(:last-child) {
+  margin-right: 44px;
+}
+
+.ourtteam-post-item + .ourtteam-post-item {
+  margin-top: 82px;
+}
+
+.ourteam-container {
+  position: relative;
+}
+
+.image-text {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background-color: #000000;
+  left: 0;
+  bottom: 0;
+  padding: 17px 106px;
+  text-align: center;
+}
+
+/*--------------------------casestudies-----------------------------------*/
+
+.casestudies {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.casestudies-list {
+  display: flex;
+  flex: 0 0 33.333%;
+}
+
+.casestudies-item:nth-child(1) {
+  background-color: #ececec;
+  flex-grow: 1;
+  padding: 109px 0 109px 120px;
+}
+
+.casestudies-item + .casestudies-item {
+  margin-left: 20px;
+}
+
+/* -------------------certification---------------------- */
+
+.certifications {
+  text-align: center;
+  padding: 109px 0 71px;
+}
+
+.certifications-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 156px;
+}
+
+/* ---------------------insights------------------------ */
+
+.insights {
+  padding: 109px 0 98px;
+  background-color: #ececec;
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.insights-title {
+  margin-bottom: 99px;
+}
+
+.insights-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-right: -20px;
+}
+
+.insights-item:nth-child(1) {
+  background-color: #000000;
+  text-align: center;
+  padding-top: 81px;
+}
+
+.insights-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+/* ---------------footer------------------ */
+
+.footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 109px 0 31px;
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.footer-flex {
+  display: flex;
+  flex: 0 0 50%;
+  padding-bottom: 129px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  padding-right: 222px;
+}
+
+.footer-logo {
+  margin-bottom: 85px;
+}
+
+.footer-item {
+  margin-top: 40px;
+}
+
+.footer-link {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.28;
+  color: #ffffff;
+  white-space: nowrap;
+}
+.lower {
+  text-transform: lowercase;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.footer-icon-tel {
+  background-image: url(./images/svg/tell.svg);
+  margin-right: 109px;
+  width: 27px;
+  height: 36px;
+}
+
+.footer-icon-email {
+  background-image: url(./images/svg/email.svg);
+  margin-right: 90px;
+  width: 45px;
+  height: 36px;
+}
+
+.footer-icon-email,
+.footer-icon-tel {
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+
+  fill: #fff;
+}
+
+.footer-form {
+  padding-right: 230px;
+  flex-basis: 50%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  margin-bottom: 10px;
+  height: 80px;
+  padding-left: 23px;
+  margin-top: 0;
+}
+
+.form-textarea {
+  height: 241px;
+  margin-bottom: 10px;
+  padding: 31px 0 0 23px;
+  margin-bottom: 10px;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.27;
+  text-transform: capitalize;
+  color: #000000;
+  /* text-align: center; */
+}
+
+.form-btn {
+  width: 303px;
+  height: 80px;
+  color: #fff;
+  background-color: #5ca7ff;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.footer-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-item + .social-item {
+  margin-left: 13.96px;
 }
