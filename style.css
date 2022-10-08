@@ -342,14 +342,22 @@ button {
   background-color: #2881e6;
 }
 
-.liner {
+.clik-zone {
   position: absolute;
-  width: 50px;
-  height: 5px;
-  border-radius: 2.5px;
+  padding: 5px 35px;
   bottom: 55px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.liner {
+  position: relative;
+  width: 50px;
+  height: 5px;
+  border-radius: 2.5px;
+  /* bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%); */
   background-color: #fff;
   display: inline-flex;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -376,13 +384,17 @@ button {
   left: -35px;
 }
 
-.liner:hover::before,
-.liner:hover::after {
+.clik-zone:hover .liner::before,
+.clik-zone:hover .liner::after {
   background-color: #fff;
 }
-.liner:hover {
+
+.clik-zone:hover .liner {
   background-color: #c4c4c4;
 }
+/* .liner:hover {
+  background-color: #c4c4c4;
+} */
 
 /* ---------------------whoweare--------------------------- */
 
