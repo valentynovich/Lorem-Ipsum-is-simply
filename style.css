@@ -352,6 +352,7 @@ button {
   transform: translateX(-50%);
   background-color: #fff;
   display: inline-flex;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .liner::after,
@@ -362,6 +363,7 @@ button {
   width: 25px;
   border-radius: 2.5px;
   background-color: #c4c4c4;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .liner::after {
@@ -476,6 +478,7 @@ button {
 .solution-item {
   padding: 61px 41px 45px;
   background-color: #fff;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .solution-item + .solution-item {
@@ -715,6 +718,8 @@ button {
   height: 80px;
   padding-left: 23px;
   margin-top: 0;
+  outline: none;
+  border: none;
 }
 
 .form-textarea {
@@ -722,6 +727,9 @@ button {
   margin-bottom: 10px;
   padding: 31px 0 0 23px;
   margin-bottom: 10px;
+  outline: none;
+  resize: none;
+  border: none;
 }
 
 .form-input::placeholder,
