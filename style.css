@@ -1,6 +1,12 @@
+html,
+body {
+  width: 100%;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-family: "Nixie One", cursive;
+  /* position: relative; */
 }
 
 img {
@@ -37,8 +43,9 @@ button {
 
 .container {
   /* width: 100vw; */
+  /* width: 100%; */
   max-width: 1920px;
-  padding: 0 160px 0;
+  padding: 0 160px;
   margin: 0 auto;
 }
 
@@ -116,6 +123,11 @@ button {
   line-height: 1.29;
   text-transform: uppercase;
   color: #000000;
+}
+
+.yes {
+  white-space: normal;
+  resize: both;
 }
 
 .benefits-pre-title {
@@ -277,13 +289,20 @@ button {
   position: relative;
 }
 
+header,
+section,
+footer,
+.backgraund {
+  width: 100%;
+}
+
 /* ----------------header----------------- */
 
 .header {
   background-color: #000000;
   padding-top: 43px;
   padding-bottom: 43px;
-  width: 1920px;
+  /* width: 1920px; */
   margin: 0 auto;
 }
 
@@ -293,9 +312,20 @@ button {
   align-items: center;
 }
 
+/* .spsn12 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #c03f3f;
+} */
+
 .header-list {
   display: flex;
   align-items: center;
+}
+
+.header-link {
+  white-space: nowrap;
 }
 
 .header-item + .header-item {
@@ -312,8 +342,26 @@ button {
 /* -------------------hero----------------------- */
 
 .hero {
-  width: 1920px;
-  margin: 0 auto;
+  /* width: 1920px;
+  margin: 0 auto; */
+  background-color: #000000;
+  /* background-image: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(0, 0, 0, 0.18) 0%,
+      rgba(0, 0, 0, 0.78) 100%
+    ),
+    url(./images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 350px;
+  padding-bottom: 350px;
+  position: relative; */
+  /* filter: blur(3px);
+  -webkit-filter: blur(3px); */
+}
+
+.hero-background {
   background-image: radial-gradient(
       50% 50% at 50% 50%,
       rgba(0, 0, 0, 0.18) 0%,
@@ -399,26 +447,47 @@ button {
 /* ---------------------whoweare--------------------------- */
 
 .whoweare {
-  width: 1920px;
+  /* width: 1920px;
+  margin: 0 auto; */
+  background-image: linear-gradient(
+    to right,
+    rgb(231, 231, 231, 1) 50%,
+    rgb(255, 255, 255, 1) 50%
+  );
+  /* background-repeat: no-repeat;
+  background-position: 5% 35%; */
+}
+
+.container-whoweare {
+  max-width: 1920px;
+  padding: 0 100px;
   margin: 0 auto;
-  background-image: url(./images/Blob-Shape.png),
-    linear-gradient(
-      to right,
-      rgb(231, 231, 231, 1) 50.5%,
-      rgb(255, 255, 255, 1) 50.5%
-    );
-  background-repeat: no-repeat;
-  background-position: 5% 35%;
 }
 
 .whoweare-flex {
+  background-image: url(./images/Blob-Shape.png);
+  background-repeat: no-repeat;
+  background-position: 0% 35%;
+  background-size: 385px 387px;
   display: flex;
+  padding: 0 60px;
+}
+
+/* .whoweare-quote {
+  background-image: url(./images/Blob-Shape.png);
+  background-repeat: no-repeat;
+  background-position: -10% 35%;
+} */
+
+.whoweare-circle,
+.whoweare-content {
   flex: 1 0 50%;
 }
 
 .whoweare-content {
   background-color: #fff;
   padding: 109px 0 149px 9px;
+  flex: 1 0 50%;
 }
 
 .whoweare-title {
@@ -428,33 +497,48 @@ button {
 /* ----------------------------whyus------------------------------------ */
 
 .whyus {
-  background-image: url(./images/why-us.jpg);
-  background-repeat: no-repeat;
-  background-size: 49.5% 100%;
-  background-position: right;
-  width: 1920px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255, 1) 50%,
+    rgb(231, 231, 231, 1) 50%
+  );
+  /* background-repeat: no-repeat;
+  background-size: 860px 1080px;
+  background-position: right; */
+  /* width: 1920px;
+  margin: 0 auto; */
+}
+
+.container-whyus {
+  max-width: 1930px;
   margin: 0 auto;
 }
 
+.whyus-flex {
+  display: flex;
+}
+
+.whyus-content,
+.whyus-img {
+  flex: 0 0 50%;
+}
+
 .whyus-content {
-  padding: 109px 61px 354px 5px;
+  padding: 110px 60px 355px 165px;
+
+}
+
+.whyus-content > p {
+  width: 4;
 }
 
 .title-whyus {
   margin-bottom: 194px;
 }
 
-.whyus-flex {
-  display: flex;
-  flex: 0 0 50%;
-}
-
 .whyus-img {
-  padding: 395px;
-  /* background-color: #e7e7e7;
-  background-image: url(./images/why-us.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; */
+  background: no-repeat 0px 0px / cover url(./images/why-us.jpg);
 }
 
 /* -------------------------double backgraund-------------------------------- */
@@ -547,7 +631,14 @@ button {
   padding-right: 60px;
   flex-basis: 487px;
   flex-grow: 1;
+  /* border: 1px solid black;
+  filter: drop-shadow(5px 5px 3px rgb(0, 0, 0));
+  -webkit-filter: drop-shadow(5px 5px 3px rgb(0, 0, 0)); */
 }
+/* .img {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+} */
 
 .ourteam-list {
   display: flex;
@@ -756,11 +847,17 @@ button {
 
 .form-btn {
   align-self: start;
-  /* width: 303px;
-  height: 80px; */
+  /*width: 303px;
+  height: 80px;
+  */
+  border-radius: 10px 20px 30px;
   padding: 27px 111px;
   background-color: #5ca7ff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-border-radius: 10px 20px 30px;
+  -moz-border-radius: 10px 20px 30px;
+  -ms-border-radius: 10px 20px 30px;
+  -o-border-radius: 10px 20px 30px;
 }
 
 .form-btn:focus,
