@@ -324,10 +324,21 @@ button {
 
 .hero {
   background-color: #010101;
+  background-image: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(0, 0, 0, 0.18) 0%,
+      rgba(0, 0, 0, 0.78) 100%
+    ),
+    url(./images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 350px;
+  padding-bottom: 350px;
 }
 
-.hero-background {
-  background-image: radial-gradient(
+.hero-position {
+  /* background-image: radial-gradient(
       50% 50% at 50% 50%,
       rgba(0, 0, 0, 0.18) 0%,
       rgba(0, 0, 0, 0.78) 100%
@@ -337,7 +348,7 @@ button {
   background-size: cover;
   background-position: bottom;
   padding-top: 350px;
-  padding-bottom: 350px;
+  padding-bottom: 350px; */
   position: relative;
 }
 
@@ -356,7 +367,7 @@ button {
 .clik-zone {
   position: absolute;
   padding: 5px 35px;
-  bottom: 55px;
+  bottom: -295px;
   left: 50%;
   transform: translateX(-50%);
 }
